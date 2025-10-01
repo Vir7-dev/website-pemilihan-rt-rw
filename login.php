@@ -8,7 +8,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $password = trim($_POST['password'] ?? '');
 
     if ($nik === '' || $password === '') {
-        echo "⚠️ Isi NIK dan password.";
+        echo "Isi NIK dan password.";
         exit;
     }
 
@@ -23,7 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     if (!mysqli_stmt_fetch($stmt)) {
         mysqli_stmt_close($stmt);
-        echo "⚠️ NIK tidak ditemukan!";
+        echo "NIK tidak ditemukan!";
         exit;
     }
     mysqli_stmt_close($stmt);
@@ -64,7 +64,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         header("Location: dashboard.php");
         exit;
     } else {
-        echo "⚠️ Password salah!";
+        echo "Password salah!";
         exit;
     }
 }
