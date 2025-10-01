@@ -1,0 +1,45 @@
+body {
+      display: flex;
+      justify-content: center; /* Horizontal tengah */
+      align-items: center;    /* Vertikal tengah */
+      height: 100vh;          /* Full tinggi layar */
+      margin: 0;
+      background: #f0f0f0;
+      font-family: Arial, sans-serif;
+    }
+
+    form {
+      background: #0ea42a;
+      padding: 20px 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      background: #ffffff;
+      color: rgb(0, 0, 0);
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #618b69;
+    }
